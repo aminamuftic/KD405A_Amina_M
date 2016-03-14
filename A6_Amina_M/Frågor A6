@@ -1,0 +1,18 @@
+1. Mellan vilka stationer sker sökningen?
+- Från Malmö C till Lund C.
+
+2. Hur ser en QueryString ut om man bara vill ha 5 resultatet för sökningen (Titta i xsd filen för sök-ningen)?
+-Man lägger till "&NoOf=5" och så får man så många resultat tillbaka.
+
+3. Vilka delar av resan beskriver dessa taggar: 
+<Journeys></Journeys> - Den innehåller fem olika resor.
+<Journey></Jouney> - Den innehåller all information om en resa (ex: tid, biljetter, hållplatser).
+<RouteLinks></RouteLinks> - Den innehåller all information om avgångstid och ankomstttid, och information om transportvägen.
+<RouteLink></RouteLink> - Den innhåller, ankomstttid och avgångstid, förseningar, färdzoner, typ av färdmedel, färdriktning, stationer, färdmedlets nummer. 
+Placera dem även korrekt hierarkiskt.
+
+4. Vilken XML-tagg innehåller antal byte för en resa och under vilken huvudtagg är den taggen placerad?
+-Den finns i taggen Journey och huvudtaggen är Journeys.
+
+5. Ge exempel på en XML tagg som inte finns implementerad i det API du laddade ner.
+-PriceInfo.
